@@ -79,7 +79,7 @@ public class Cat extends Pet implements PetImpl {
                 language = "The cat goes prr! prr!";
                 break;
             case WILD:
-                language = "The cat goes hiss! hiss!";
+                language = "The cat goes Hiss! Hiss!";
                 break;
             default:
                 language = "The cat goes " + super.getPetType().speak + "! " + super.getPetType().speak + "!";

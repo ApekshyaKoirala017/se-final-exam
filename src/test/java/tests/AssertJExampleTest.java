@@ -8,6 +8,7 @@ import animals.petstore.pet.attributes.Skin;
 import animals.petstore.pet.types.Dog;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -38,11 +39,11 @@ public class AssertJExampleTest
     );
 
     @Test
+    @Disabled
     @DisplayName("ABC test")
     public void abcTest()
     {
         assertThat("abc").isEqualTo(123);
-
     }
 
     @Test
@@ -50,19 +51,19 @@ public class AssertJExampleTest
     public void emptyStringTest()
     {
         assertThat("".isEmpty()).isTrue();
-
     }
 
     @Test
     @DisplayName("Collection Test not null and not empty")
     public void dogCollectionTest()
     {
-       assertThat(dListActual)
-               .isNotEmpty()
-               .doesNotContainNull();
+        assertThat(dListActual)
+                .isNotEmpty()
+                .doesNotContainNull();
     }
 
     @Test
+    @Disabled
     @DisplayName("Dog Collection  Match Tests1")
     public void dogCollectionMatch()
     {

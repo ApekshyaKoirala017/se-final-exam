@@ -1,9 +1,12 @@
 package animals.petstore.store;
 
-/**
- * Exception if there are duplicate records in the pet store inventory list
- */
-public class DuplicatePetStoreRecordException extends Exception {
-    public DuplicatePetStoreRecordException(String errorMessage) {
-        super(errorMessage);
-    }}
+public class DuplicatePetStoreRecordException extends RuntimeException {
+
+    public DuplicatePetStoreRecordException(String message) {
+        super(message);
+    }
+
+    public DuplicatePetStoreRecordException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
